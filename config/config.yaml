@@ -1,0 +1,12 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion/unzip
+  service_account_file: research/client_secrets.json
+  root_folder_id: 1VXY9KFL_4FOO30Pg4uC2AJZSx0foueJ8
+  scopes:
+    - https://www.googleapis.com/auth/drive
+  local_dir: artifacts/data_ingestion
+

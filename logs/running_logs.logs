@@ -1,3 +1,55 @@
 [2025-09-25 23:00:03,147: INFO: main: Starting the CNN CD Application]
 [2025-09-25 23:01:09,596: INFO: main: Starting the CNN CD Application]
 [2025-09-25 23:01:09,596: INFO: main: Starting the CNN CD Application at 2nd time]
+[2025-10-04 19:53:42,018: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2025-10-04 19:53:42,022: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-04 19:53:42,023: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-04 19:53:42,024: INFO: common: created directory at: artifacts]
+[2025-10-04 19:53:42,027: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-04 19:53:42,061: INFO: transport: Attempting refresh to obtain initial access_token]
+[2025-10-04 19:53:42,070: INFO: client: Refreshing access_token]
+[2025-10-04 19:53:47,613: ERROR: main: [Errno 2] No such file or directory: 'Downloaded_Folder/Chicken-fecal-images.zip']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\dmsum\onedrive\desktop\end-to-end-deep-learning-project-chicken-disease-classification\src\cnnClassifier\pipeline\stage_o1_data_ingestion.py", line 24, in main
+    raise e
+  File "c:\users\dmsum\onedrive\desktop\end-to-end-deep-learning-project-chicken-disease-classification\src\cnnClassifier\pipeline\stage_o1_data_ingestion.py", line 19, in main
+    data_ingestion.download_folder()
+  File "c:\users\dmsum\onedrive\desktop\end-to-end-deep-learning-project-chicken-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 50, in download_folder
+    file.GetContentFile(self.config.local_data_file)  # overwrite path
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\pydrive2\auth.py", line 85, in _decorated
+    return decoratee(self, *args, **kwargs)
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\pydrive2\files.py", line 336, in GetContentFile
+    with open(filename, mode="w+b") as fd:
+FileNotFoundError: [Errno 2] No such file or directory: 'Downloaded_Folder/Chicken-fecal-images.zip'
+[2025-10-04 19:57:43,888: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2025-10-04 19:57:43,906: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-04 19:57:43,909: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-04 19:57:43,911: INFO: common: created directory at: artifacts]
+[2025-10-04 19:57:43,912: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-04 19:57:43,913: ERROR: main: [Errno 2] No such file or directory: 'C:/Users/dmsum/OneDrive/Desktop/.../client_secrets.json']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\dmsum\onedrive\desktop\end-to-end-deep-learning-project-chicken-disease-classification\src\cnnClassifier\pipeline\stage_o1_data_ingestion.py", line 24, in main
+    raise e
+  File "c:\users\dmsum\onedrive\desktop\end-to-end-deep-learning-project-chicken-disease-classification\src\cnnClassifier\pipeline\stage_o1_data_ingestion.py", line 17, in main
+    data_ingestion = DataIngestion(config=data_ingestion_config)
+  File "c:\users\dmsum\onedrive\desktop\end-to-end-deep-learning-project-chicken-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 16, in __init__
+    self.drive = self._authenticate()
+  File "c:\users\dmsum\onedrive\desktop\end-to-end-deep-learning-project-chicken-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 20, in _authenticate
+    credentials = ServiceAccountCredentials.from_json_keyfile_name(
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\oauth2client\service_account.py", line 219, in from_json_keyfile_name
+    with open(filename, 'r') as file_obj:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/Users/dmsum/OneDrive/Desktop/.../client_secrets.json'
+[2025-10-04 19:59:20,197: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2025-10-04 19:59:20,217: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-04 19:59:20,221: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-04 19:59:20,221: INFO: common: created directory at: artifacts]
+[2025-10-04 19:59:20,222: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-04 19:59:20,260: INFO: transport: Attempting refresh to obtain initial access_token]
+[2025-10-04 19:59:20,271: INFO: client: Refreshing access_token]
+[2025-10-04 20:01:39,414: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<
+
+x========x]
