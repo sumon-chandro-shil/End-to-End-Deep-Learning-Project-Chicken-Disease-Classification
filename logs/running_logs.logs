@@ -53,3 +53,67 @@ FileNotFoundError: [Errno 2] No such file or directory: 'C:/Users/dmsum/OneDrive
 [2025-10-04 20:01:39,414: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<
 
 x========x]
+[2025-10-05 22:33:42,314: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2025-10-05 22:33:42,319: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-05 22:33:42,322: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-05 22:33:42,323: INFO: common: created directory at: artifacts]
+[2025-10-05 22:33:42,324: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-05 22:33:42,361: INFO: transport: Attempting refresh to obtain initial access_token]
+[2025-10-05 22:33:42,374: INFO: client: Refreshing access_token]
+[2025-10-05 22:34:10,214: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2025-10-05 22:34:10,218: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-05 22:34:10,220: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-05 22:34:10,220: INFO: common: created directory at: artifacts]
+[2025-10-05 22:34:10,222: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-05 22:34:10,242: INFO: transport: Attempting refresh to obtain initial access_token]
+[2025-10-05 22:34:10,249: INFO: client: Refreshing access_token]
+[2025-10-05 22:34:12,619: INFO: client: Failed to retrieve access token: {"error":"invalid_grant","error_description":"Invalid JWT Signature."}]
+[2025-10-05 22:34:12,619: ERROR: main: invalid_grant: Invalid JWT Signature.]
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    data_ingestion.main()
+  File "c:\users\dmsum\onedrive\desktop\end-to-end-deep-learning-project-chicken-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 24, in main
+    raise e
+  File "c:\users\dmsum\onedrive\desktop\end-to-end-deep-learning-project-chicken-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 19, in main
+    data_ingestion.download_folder()
+  File "c:\users\dmsum\onedrive\desktop\end-to-end-deep-learning-project-chicken-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 40, in download_folder
+    file_list = self.drive.ListFile(
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\pydrive2\apiattr.py", line 166, in GetList
+    for x in self:
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\pydrive2\apiattr.py", line 150, in __next__
+    result = self._GetList()
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\pydrive2\auth.py", line 85, in _decorated
+    return decoratee(self, *args, **kwargs)
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\pydrive2\files.py", line 84, in _GetList
+    self.auth.service.files()
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\googleapiclient\http.py", line 923, in execute
+    resp, content = _retry_request(
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\googleapiclient\http.py", line 191, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\oauth2client\transport.py", line 159, in new_request
+    credentials._refresh(orig_request_method)
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\oauth2client\client.py", line 749, in _refresh
+    self._do_refresh_request(http)
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\oauth2client\client.py", line 819, in _do_refresh_request
+    raise HttpAccessTokenRefreshError(error_msg, status=resp.status)
+oauth2client.client.HttpAccessTokenRefreshError: invalid_grant: Invalid JWT Signature.
+[2025-10-05 22:35:54,471: INFO: main: >>>>> stage Prepare base model started <<<<<]
+[2025-10-05 22:35:54,476: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-05 22:35:54,479: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-05 22:35:54,479: INFO: common: created directory at: artifacts]
+[2025-10-05 22:35:54,480: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-10-05 22:35:55,348: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-10-05 22:36:00,815: INFO: main: >>>>> stage Prepare base model completed <<<<<
+
+x========x]
+[2025-10-05 22:36:51,621: INFO: main: >>>>> stage Prepare base model started <<<<<]
+[2025-10-05 22:36:51,625: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-05 22:36:51,627: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-05 22:36:51,627: INFO: common: created directory at: artifacts]
+[2025-10-05 22:36:51,629: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-10-05 22:36:52,299: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-10-05 22:36:52,658: INFO: main: >>>>> stage Prepare base model completed <<<<<
+
+x========x]
