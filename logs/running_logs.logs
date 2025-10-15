@@ -266,3 +266,83 @@ Traceback (most recent call last):
   File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\keras\preprocessing\image.py", line 563, in __init__
     for subdir in sorted(os.listdir(directory)):
 FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion/Chicken-fecal-images'
+[2025-10-15 22:01:12,405: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.101:8080]
+[2025-10-15 22:01:12,406: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-10-15 22:01:12,414: INFO: _internal:  * Restarting with stat]
+[2025-10-15 22:01:20,420: WARNING: _internal:  * Debugger is active!]
+[2025-10-15 22:01:20,429: INFO: _internal:  * Debugger PIN: 781-048-057]
+[2025-10-15 22:01:38,168: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:01:38] "GET / HTTP/1.1" 200 -]
+[2025-10-15 22:03:59,456: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.101:8080]
+[2025-10-15 22:03:59,457: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-10-15 22:03:59,459: INFO: _internal:  * Restarting with stat]
+[2025-10-15 22:04:06,644: WARNING: _internal:  * Debugger is active!]
+[2025-10-15 22:04:06,652: INFO: _internal:  * Debugger PIN: 781-048-057]
+[2025-10-15 22:04:06,705: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:04:06] "GET / HTTP/1.1" 200 -]
+[2025-10-15 22:04:35,154: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:04:35] "POST /predict HTTP/1.1" 200 -]
+[2025-10-15 22:05:15,609: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:05:15] "POST /predict HTTP/1.1" 200 -]
+[2025-10-15 22:05:20,961: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:05:20] "POST /predict HTTP/1.1" 200 -]
+[2025-10-15 22:05:41,078: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:05:41] "POST /predict HTTP/1.1" 200 -]
+[2025-10-15 22:05:46,560: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000236974923A0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-10-15 22:05:46,565: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:05:46] "POST /predict HTTP/1.1" 200 -]
+[2025-10-15 22:05:53,417: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000236974920D0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-10-15 22:05:53,423: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:05:53] "POST /predict HTTP/1.1" 200 -]
+[2025-10-15 22:06:57,133: INFO: main: >>>>> stage Prepare base model started <<<<<]
+[2025-10-15 22:06:57,184: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-15 22:06:57,203: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-15 22:06:57,206: INFO: common: created directory at: artifacts]
+[2025-10-15 22:06:57,206: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-10-15 22:06:58,078: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-10-15 22:07:00,946: INFO: main: >>>>> stage Prepare base model completed <<<<<
+
+x========x]
+[2025-10-15 22:07:00,946: INFO: main: *******************]
+[2025-10-15 22:07:00,946: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-10-15 22:07:00,951: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-15 22:07:00,956: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-15 22:07:00,958: INFO: common: created directory at: artifacts]
+[2025-10-15 22:07:00,959: INFO: common: created directory at: artifacts\training]
+[2025-10-15 22:08:37,957: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:08:37] "GET / HTTP/1.1" 200 -]
+[2025-10-15 22:08:49,749: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:08:49] "POST /predict HTTP/1.1" 200 -]
+[2025-10-15 22:16:37,254: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-10-15 22:16:37,254: INFO: main: *******************]
+[2025-10-15 22:16:37,254: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-10-15 22:16:37,263: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-15 22:16:37,276: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-15 22:16:37,280: INFO: common: created directory at: artifacts]
+[2025-10-15 22:16:41,772: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion/Chicken-fecal-images']
+Traceback (most recent call last):
+  File "main.py", line 52, in <module>
+    model_evalution.main()
+  File "c:\users\dmsum\onedrive\desktop\end-to-end-deep-learning-project-chicken-disease-classification\src\cnnClassifier\pipeline\stage_04_evaluation.py", line 19, in main
+    evaluation.evaluation()
+  File "c:\users\dmsum\onedrive\desktop\end-to-end-deep-learning-project-chicken-disease-classification\src\cnnClassifier\components\evaluation.py", line 45, in evaluation
+    self._valid_generator()
+  File "c:\users\dmsum\onedrive\desktop\end-to-end-deep-learning-project-chicken-disease-classification\src\cnnClassifier\components\evaluation.py", line 30, in _valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\keras\preprocessing\image.py", line 1648, in flow_from_directory
+    return DirectoryIterator(
+  File "C:\Users\dmsum\anaconda3\envs\cnncd\lib\site-packages\keras\preprocessing\image.py", line 563, in __init__
+    for subdir in sorted(os.listdir(directory)):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion/Chicken-fecal-images'
+[2025-10-15 22:16:42,770: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:16:42] "GET /train HTTP/1.1" 200 -]
+[2025-10-15 22:16:56,306: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:16:56] "POST /predict HTTP/1.1" 200 -]
+[2025-10-15 22:17:08,226: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:17:08] "POST /predict HTTP/1.1" 200 -]
+[2025-10-15 22:17:21,611: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:17:21] "POST /predict HTTP/1.1" 200 -]
+[2025-10-15 22:25:39,562: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.101:8080]
+[2025-10-15 22:25:39,562: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-10-15 22:25:39,567: INFO: _internal:  * Restarting with stat]
+[2025-10-15 22:25:46,412: WARNING: _internal:  * Debugger is active!]
+[2025-10-15 22:25:46,419: INFO: _internal:  * Debugger PIN: 781-048-057]
+[2025-10-15 22:25:48,750: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:25:48] "GET / HTTP/1.1" 200 -]
+[2025-10-15 22:25:59,334: INFO: _internal: 127.0.0.1 - - [15/Oct/2025 22:25:59] "POST /predict HTTP/1.1" 200 -]
